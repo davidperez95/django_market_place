@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -41,7 +44,9 @@ DJANGO_APPS = [
 
 LOCAL_APPS = [
     'core',
+    'dashboard',
     'item',
+    'conversation',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
